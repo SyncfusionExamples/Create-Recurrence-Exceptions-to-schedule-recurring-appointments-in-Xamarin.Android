@@ -51,6 +51,7 @@ namespace RecurrenceExceptions
             exceptionDate3.Set(2017, 08, 07);
 
             ScheduleAppointment recurrenceAppointment = new ScheduleAppointment();
+            recurrenceAppointment.Id = 1;
             recurrenceAppointment.StartTime = startTime;
             recurrenceAppointment.EndTime = endTime;
             recurrenceAppointment.Subject = "Daily Occurs";
@@ -111,7 +112,7 @@ namespace RecurrenceExceptions
             exceptionAppointment.EndTime = endTime1;
             exceptionAppointment.Subject = "Daily Occurs";
             exceptionAppointment.Color = Color.Red;
-            exceptionAppointment.RecurrenceId = recurrenceAppointment;
+            exceptionAppointment.RecurrenceId = recurrenceAppointment.Id;
             exceptionAppointment.ExceptionOccurrenceActualDate = exceptionDate3;
             scheduleAppointmentCollection.Add(exceptionAppointment);
         }
